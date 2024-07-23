@@ -13,5 +13,4 @@ The point of this script is to give users a start point of stocks to look at in 
 
 ### Notes
 
-- Must create a relative directory called **CSV**
 - Should delete the items inside of the CSV folder the 2nd of every month.
