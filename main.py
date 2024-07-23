@@ -1,5 +1,7 @@
 import pandas as pd
 import avg_returns_list as arl
+from datetime import datetime
+import os
 
 
 stocks = [
@@ -301,13 +303,10 @@ df = arl.get_monthly_returns(stocks, month="August").sort_values(
 )
 
 
-# print(df.to_string())
-
 hundred = df[df["pos_rate%"] == 100]
+# hundred = df[df["pos_rate%"] >= 50]
 print(hundred.to_string())
 
-from datetime import datetime
-import os
 
 filepath = f"{datetime.today().strftime('%Y-%m-%d')}.csv"
 if os.path.exists(filepath):
