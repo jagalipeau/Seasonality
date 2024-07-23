@@ -15,12 +15,3 @@ def tickerData(ticker):
         pd.DataFrame.to_csv(data, f"CSV/{ticker}.csv")
         # print("Created a new CSV")
         return data
-
-
-import avg_return as avg
-
-
-if __name__ == "__main__":
-    data = tickerData("GNRC")
-    returns = avg.avg_rtn(data, 5)[0]
-    print(returns.loc[returns.index == "July"])
