@@ -12,7 +12,6 @@ stocks = [
     "GOOGL",
     "AMZN",
     "META",
-    "BRK.B",
     "LLY",
     "AVGO",
     "TSLA",
@@ -296,15 +295,16 @@ stocks = [
     "FMC",
     "MHK",
     "ETSY",
+    "SPY",
 ]
 
-df = arl.get_monthly_returns(stocks, month="August").sort_values(
+df = arl.get_monthly_returns(stocks, month="September").sort_values(
     by="pos_rate%", ascending=False
 )
 
 
 hundred = df[df["pos_rate%"] == 100]
-# hundred = df[df["pos_rate%"] >= 50]
+# hundred = df[df["pos_rate%"] >= 0]
 print(hundred.to_string())
 
 
