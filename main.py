@@ -21,6 +21,7 @@ stocks = [
     "XOM",
     "UNH",
     "MA",
+    "TXRH",
     "ORCL",
     "PG",
     "COST",
@@ -298,7 +299,7 @@ stocks = [
     "SPY",
 ]
 
-df = arl.get_monthly_returns(stocks, month="September").sort_values(
+df = arl.get_monthly_returns(stocks, month="October").sort_values(
     by="pos_rate%", ascending=False
 )
 
