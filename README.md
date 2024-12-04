@@ -39,6 +39,7 @@ Seasonality Analyzer is a Python tool that identifies stocks with consistent pos
 1. Clone the repository:
    ```bash
    git clone https://github.com/jagalipeau/Seasonality.git
+   cd Seasonality
    ```
 
 2. Run the main script:
