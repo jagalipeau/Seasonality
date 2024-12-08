@@ -58,13 +58,13 @@ You can customize the analysis by modifying the following parameters in the code
   ```
 - **Target Month**: Update the month variable in `main.py`:
   ```python
-  # Change month (1 = January, 12 = December)
-  month = 12  # Example: Set to December
+  # Change month
+  df = arl.get_monthly_returns(stocks, month="December").sort_values(....
   ```
 - **Positive Return Threshold**: Modify the threshold in `main.py`:
   ```python
-  # Change threshold (0.8 = stock must be positive 80% of the time)
-  threshold = 0.8  # Example: Set to 80% positive returns
+  # Change threshold (100 = stock must be positive 100% of the time)
+  hundred = df[df["pos_rate%"] == 100]
   ```
 
 ## Maintenance
